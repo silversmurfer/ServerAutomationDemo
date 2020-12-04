@@ -8,18 +8,18 @@ trigger:
       - server.parameters.json
 
 pool:
-  vmImage: "ubuntu-latest"
+  vmImage: "windows-latest"
 
 variables:
   - group: ServerAutomationDemo
   - name: azure_resource_group_name
     value: "ServerProvisionTesting-$(Build.BuildId)"
   - name: subscription_id
-    value: "6af25d63-30f5-4974-a36e-7e2d9f2ff178"
+    value: "xxxx"
   - name: application_id
-    value: "36d1d766-bfe8-4ca1-bbaa-62239455ae96"
+    value: "xxxx"
   - name: tenant_id
-    value: "a9fef4d4-ac4d-4f19-b4aa-ed672d216495"
+    value: "xxxx"
 
 steps:
   - task: PowerShell@2
